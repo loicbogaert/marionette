@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  
+<div id="form"></div>
+<div id="list"></div>
+<div id="books"></div>
+
+
+<script id="booksView" type="text/template">
+  <h2>List of books : </h2>
+  <p>Title: {{title}}</p>
+  <p>Author: {{author}}</p>
+  <p>Page Number: {{pageNumber}}</p>
+  <p>isbn: {{isbn}}</p>
+  <p>available: {{available}}</p>
+</script>
+
+<script id="NoBooksView" type="text/template">
+  <h2>No Books</h2>
+    </script>
+
+<script id="formView" type="text/template">
+  <h2>New user:</h2>
+      <p>
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+      </p>
+      <p>
+        <label for="age">Age: </label>
+        <input type="text" id="age">
+      </p>
+      <button>Create</button>
+    </script>
+
+<script id="userView" type="text/template">
+  <p>Name: {{name}}</p>
+  <p>Age: {{age}}</p>
+    </script>
+
+<script id="usersView" type="text/template">
+  <h2>Users</h2>
+    </script>
+
+<script id="noUsersView" type="text/template">
+  <h2>No users</h2>
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script type="text/javascript"  src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript"  src="../bower_components/underscore/underscore-min.js"></script>
+    <script type="text/javascript"  src="../bower_components/backbone/backbone-min.js"></script>
+    <script type="text/javascript"  src="../bower_components/marionette/lib/backbone.marionette.js"></script>
+    <script type="text/javascript"  src="script.js"></script>
+
+  </body>
+  </html>
